@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shiv s Web</title>
+</head>
+<body>
+    <h1 class="header">Code<span id="js">Js</span></h1>
+    <main>
+        <div class="generator">
+            <h1>Password Generator</h1>
+            <label for="password" class="pass">
+            <input type="text" id="password" placeholder="password" value="" readonly/>
+        </label>
+        <label>
+            <span>Length: </span>
+            <input type="number" id="length" value="16" />
+        </label>
+        <label>
+            <span>include UpperCase Letter: </span>
+            <input type="checkbox" id="uppercase" checked />
+        </label>
+        <label>
+            <span>include LowerCase Letter: </span>
+            <input type="checkbox" id="lowercase" checked />
+        </label>
+        <label>
+            <span>include Numbers: </span>
+            <input type="checkbox" id="number" checked />
+        </label>
+        <label>
+            <span>include Symbols: </span>
+            <input type="checkbox" id="symbol" checked />
+        </label>
+        <button type="submit" class="material" id="generate">Generate</button>
+        <button class="material" id="copy">Copy</button>
+    </div>
+    </main>
+    <footer class="foot">made by am_shiv 2023</footer>
+    <script src="app.js"></script>
+</body>
+</html>

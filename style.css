@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+.header{
+    background-color: #070707;
+    color:#fff;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#js{
+    color: red;
+}
+
+.header:hover{
+    text-decoration: underline;
+}
+
+.foot{
+    background-color: #cacaca;
+    color:#282847;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+body{
+    background-color: #71aaee;
+    color: #282847;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.generator{
+    width: 100%;
+    max-width: 40rem;
+    padding: 2rem 1rem;
+    height: auto;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 0.9rem;
+    overflow-wrap: break-word;
+}
+
+
+
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+input:not([type = "checkbox"]){
+    appearance: none;
+    outline: none;
+    border: none;
+    background:none;
+}
+
+
+button{
+    appearance: none;
+    outline: none;
+    border: none;
+    background:none;
+}
+
+.pass{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.pass:after{
+    content:"";
+    display:block;
+    position: absolute;
+    top:100%;
+    height: 3px;
+    left:0;
+    right:0;
+    border-radius: 3px;
+    background: linear-gradient(to right,#ad25fc 25%,#518cd4 75%);
+}
+
+.pass input{
+    flex:1 1 0%;
+    padding: 0.5rem;
+    color:#282847;
+}
+
+.pass input::placeholder{
+    color:#aaa;
+    font-style: italic;
+
+}
+
+.pass button{
+    cursor: pointer;
+    background:linear-gradient(to bottm ,#ad25fc 25%,#518cd4 75%);
+    -webkit-text-fill-color: transparent;
+}
+
+label{
+    display: flex;
+    white-space: nowrap;
+    user-select: none;
+    margin-bottom: 1rem;
+}
+
+label span{
+    display: block;
+    flex:1 1 0%;
+    white-space: nowrap;
+}
+
+
+label input[type="number"]{
+    text-align: right;
+}
+
+
+.material{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color:#fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #bb4afd 25%,#518cd4 50%);
+    background-size: 200%;
+}
+
+
+button[type="submit"]:hover{
+    background-position: 75%;
+
+}
+
